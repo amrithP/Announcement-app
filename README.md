@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Announcement App
 
 A complete MERN stack web application for managing and displaying announcements with password-protected authentication.
@@ -135,3 +136,6 @@ The client will run on `http://localhost:3000`
 - CORS configuration
 
 nod
+=======
+# Announcement-app
+>>>>>>> a1e97e8f4a321e5e307cbc0697a7b789a442917a
