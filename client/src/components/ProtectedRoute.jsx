@@ -12,8 +12,9 @@ const ProtectedRoute = ({ children }) => {
     );
   }
 
-  return isAuthenticated ? children : <Navigate to="/login" replace />;
+  return isAuthenticated ? children : <Navigate to="/login" replace />;  //if loggeIn show the main page. If not , redirect to the loginPlace
 };
 
 export default ProtectedRoute;
+
 

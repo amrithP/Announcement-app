@@ -30,3 +30,4 @@ const Announcement = mongoose.model('Announcement', announcementSchema);
 
 export default Announcement;
 
+

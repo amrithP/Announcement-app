@@ -1,7 +1,7 @@
 import { useAuth } from '../context/AuthContext';
 
 const AnnouncementCard = ({ announcement, isAdmin, onDelete }) => {
-  const { user } = useAuth();
+  const { user } = useAuth();  //get the user login
   // Check if user can delete (must be admin and owner)
   const canDelete = isAdmin && user && announcement.author && 
     (announcement.author.toString() === user.id || announcement.authorName === user.username);
@@ -29,7 +29,7 @@ const AnnouncementCard = ({ announcement, isAdmin, onDelete }) => {
             <span>•</span>
             <span>{formatDate(announcement.createdAt)}</span>
           </div>
-        </div>
+        </div>   
         {canDelete && (
           <button
             onClick={() => onDelete(announcement._id)}

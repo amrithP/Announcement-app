@@ -126,3 +126,4 @@ const Announcements = ({ isAdmin = false }) => {
 
 export default Announcements;
 
+
